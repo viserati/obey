@@ -1,3 +1,5 @@
+# Flip flop variables.
+
 first = "Somewhere "
 last = "Under the Rainbow "
 

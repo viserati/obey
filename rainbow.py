@@ -1,4 +1,4 @@
-# Flip flop variables.
+# Rainbow Flip flop variables.
 
 first = "Somewhere "
 last = "Under the Rainbow "

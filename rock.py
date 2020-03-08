@@ -1,4 +1,4 @@
-# rock, paper, scissors game
+# rock, paper, scissors game.
 
 #Import Module (Keep modules at the top of your page)
 import random

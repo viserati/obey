@@ -8,6 +8,8 @@ it shows up as green in the IDE?
 #Import Module (Keep modules at the top of your page)
 import random
 
+winner = ''
+
 #This varible calls the randint function.
 random_choice = random.randint(0, 2)
 
@@ -19,4 +21,6 @@ else:
     computer_choice = "Sissors"
 
 user_choice = input('Choose Rock, Paper or Scissors: ')
-print('You chose', user_choice,  'and the Ava chose', computer_choice)
+
+if computer_choice == user_choice
+    winner ='Tie'

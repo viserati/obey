@@ -20,7 +20,11 @@ elif random_choice == 1:
 else:
     computer_choice = 'sissors'
 
-user_choice = input('Choose Rock, Paper or Scissors: ')
+user_choice = ''
+while (user_choice != 'rock' and
+       user_choice != 'paper' and
+       user_choice != 'scissors'):
+      user_choice = ('rock, paper or scissors? ')
 
 if computer_choice == user_choice:
     winner ='Tie'
@@ -33,4 +37,7 @@ elif computer_choice == 'scissors' and user_choice == 'paper':
 else:
     winner = 'User'
 
-print('The' , winner, 'wins!')
+if winner == 'Tie':
+    print ("It's a tie! We both chose", computer_choice +   ", play again.")
+else:
+    print(winner,  'won. The computer chose', computer_choice + '.')

@@ -1,4 +1,4 @@
-# Iterating over a list.
+# Iterating over a list in Python.
 
 scores = [50, 60, 58, 50, 52, 54, 48, 69,34, 61, 55,
           51, 52, 44, 51, 69, 64, 66, 55, 52,

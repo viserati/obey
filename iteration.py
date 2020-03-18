@@ -8,5 +8,5 @@ scores = [50, 60, 58, 50, 52, 54, 48, 69,34, 61, 55,
 i = 0
 length = len(scores)
 while i < length:
-    print ('Bubble solution #' + str(i),  'score:', scores[i])
+    print ("Bubble Solution#" + str(i),  'score:', scores[i])
     i = i + 1

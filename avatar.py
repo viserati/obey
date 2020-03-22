@@ -1,4 +1,4 @@
-# Creating an avatar
+# Creating an avatar.
 
 def get_attribute(query, default):
     question = query + ' [' + default + ']?'

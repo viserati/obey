@@ -1,7 +1,7 @@
 # Creating an avatar.
 
 def get_attribute(query, default):
-    question = query + ' [' + default + ']?'
+    question = query + ' [' + default + ']? '
     answer = input(question)
     if (answer == ''):
         answer = default

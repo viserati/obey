@@ -16,20 +16,19 @@ else:
 	print("No record.")
 """
 # -----------------
-REFRAIN = '''
+"""
+REFRAIN =
 %d bottles of beer on the wall,
 %d bottles of beer,
 take one down, pass it around,
 %d bottles of beer on the wall!
-'''
-"""
+
 bottles_of_beer = 10
 while bottles_of_beer > 1:
     print (REFRAIN % (bottles_of_beer, bottles_of_beer,
         bottles_of_beer - 1))
     bottles_of_beer -= 1
-"""
-"""
+
 def drink_me(param):
 	msg = 'Drinking ' + param + 'glass'
 	print (msg)
@@ -39,3 +38,18 @@ glass = 'full'
 drink_me(glass)
 print('The glass is', glass)
 """
+
+balance = 10500
+camera_on = True
+
+def steal(balance, amount):
+	global camera_on
+	camera_on = False
+	if (amount < balance):
+		balance = balance - amount
+
+	return amount
+	camera_on = True
+
+proceeds = steal(balance, 1250)
+print ('Criminal: you stole', proceeds)

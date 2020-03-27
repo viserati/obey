@@ -38,7 +38,7 @@ glass = 'full'
 drink_me(glass)
 print('The glass is', glass)
 """
-
+'''
 balance = 10500
 camera_on = True
 
@@ -53,3 +53,5 @@ def steal(balance, amount):
 
 proceeds = steal(balance, 1250)
 print ('Criminal: you stole', proceeds)
+'''
+# -------------------------------------

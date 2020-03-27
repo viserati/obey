@@ -18,10 +18,16 @@ def count_syllables_in_word(word):
         return 1
 
     vowels = 'aeiouAEIOU'
+    prev_char_was_vowel = False
+
     for char in word:
         if char in vowels:
-            count = count + 1
-            
+            if not prev_char_was_vowel:
+                count = count + 1
+            prev_char_was_vowel = True
+        else:
+            prev_char_was_vowel = False
+
     return count
 
 def count_sentences(text):
@@ -42,9 +48,11 @@ def compute_readability(text):
     words = text.split()
     total_words = len(words)
     total_sentences = count_sentences(text)
+    total_syllables = count_syllables(words)
 
     print(total_words, 'words')
     print(total_sentences, 'sentences')
+    print(total_syllables, 'syllables')
 
 
 compute_readability(ch1text.text)

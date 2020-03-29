@@ -1,10 +1,10 @@
-"""The analyze module uses the Flesch–Kincaid readability test to analyze text and
+""" The analyze module uses the Flesch–Kincaid readability test to analyze text and
   produce a readability score. This score is then converted into a
   grade-based readability category."""
 
 def count_syllables(words):
     """ This function takes a list of words and returns a total
-       count of syllables across all words in the list."""
+       count of syllables across all words in the list. """
 
     count = 0
 

@@ -4,31 +4,16 @@ slowpoke = turtle.Turtle()
 slowpoke.shape('turtle')
 slowpoke.color('blue')
 
-for i in range(5):
-    slowpoke.forward(100)
-    slowpoke.right(144)
+slowpoke.pencolor('blue')
+slowpoke.penup()
+slowpoke.setposition(-120, 0)
+slowpoke.pendown()
+slowpoke.circle(50)
 
-'''
-slowpoke = turtle.Turtle()
-slowpoke.shape('turtle')
-slowpoke.color('blue')
+slowpoke.pencolor('red')
+slowpoke.penup()
+slowpoke.setposition(-120, 0)
+slowpoke.pendown()
+slowpoke.circle(50)
 
-pokey = turtle.Turtle()
-pokey.shape('turtle')
-pokey.color('red')
-
-def make_square(the_turtle):
-    for i in range(0,4):
-        the_turtle.forward(100)
-        the_turtle.right(90)
-
-def make_spiral(the_turtle):
-    for i in range(0, 36):
-        make_square(the_turtle)
-        the_turtle.right(10)
-
-make_spiral(slowpoke)
-pokey.right(5)
-make_spiral(pokey)
-'''
 turtle.mainloop()

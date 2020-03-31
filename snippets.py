@@ -1,5 +1,32 @@
 # A medley of code snippets for Python
 
+# :::::::::::::::::: Classes :::::::::::::::::
+
+class Employee:
+
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.email = first + '.' + last + '@email.com'
+        self.pay = pay
+
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
+
+emp_1 = Employee('John', 'Snow', 250000)
+emp_2 = Employee('Tyrion', 'Lannister', 260000)
+emp_3 = Employee('Theon', 'Greyjoy', 160000)
+emp_4 = Employee('Daenerys', 'Targaryen', 360000)
+
+print(emp_4.fullname())
+print(emp_4.email)
+print(emp_4.pay)
+
+
+
+
+
+
 # :::::::::::::::::: Boolean :::::::::::::::::
 
 """ In programming, the Boolean data type is
@@ -68,6 +95,7 @@ grade = 91
 #
 
 # each letter grade has a nested "if" statement
+"""
 print(grade)
 if (grade < 90):
 
@@ -93,3 +121,6 @@ if (grade < 90):
 
 else:
 	print("A")
+"""
+
+# ------------------------------------------

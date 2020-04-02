@@ -13,10 +13,10 @@ class Employee:
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
 
-emp_1 = Employee('John', 'Snow', 250000)
-emp_2 = Employee('Tyrion', 'Lannister', 260000)
-emp_3 = Employee('Theon', 'Greyjoy', 160000)
-emp_4 = Employee('Daenerys', 'Targaryen', 360000)
+emp_1 = Employee('John', 'Snow', 350000)
+emp_2 = Employee('Tyrion', 'Lannister', 460000)
+emp_3 = Employee('Theon', 'Greyjoy', 260000)
+emp_4 = Employee('Daenerys', 'Targaryen', 560000)
 
 print(emp_4.fullname())
 print(emp_4.email)

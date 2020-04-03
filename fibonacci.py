@@ -2,16 +2,29 @@
 
 import time
 
+cache = {}
+
 def fibonacci(n):
+    global cache
+    if n in cache:
+        return cache[n]
+
+
     if n == 0:
-        return 0
+        result = 0
     elif n == 1:
-        return 1
+        result = 1
     else:
-        return fibonacci (n-1) + fibonacci (n-2)
-for i in range(20, 55, 5):
-    start = time.time()
+        result = fibonacci (n-1) + fibonacci (n-2)
+    cache[n] = result
+    return result
+
+start = time.time()
+
+for i in range(0, 101):
     result = fibonacci(i)
-    end = time.time()
-    duration = end - start
     print(i, result)
+
+finish = time.time()
+duration = finish - start
+print('Computed all 100 in', duration, 'seconds')    

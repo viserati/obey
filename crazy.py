@@ -9,9 +9,22 @@ def make_crazy_lib(filename):
     file.close()
 
     return text
+placeholders =['NOUN', 'ADJECTIVE', 'VERB_ING', 'VERB']
 
 def process_line(line):
-    return line
+    global placeholders
+    processed_line = ''
+
+    words = line.split()
+
+    for word in words:
+        if word in placeholders:
+            answer = input('Enter a ' + word +":")
+            processed_line = processed_line + answer + ' '
+        else:
+            processed_line = processed_line + word + ' '
+
+    return processed_line + '\n'
 
 def main():
     lib = make_crazy_lib('lib.txt')

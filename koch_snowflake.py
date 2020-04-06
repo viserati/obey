@@ -1,3 +1,6 @@
+# Koch's snowflake
+
+
 import turtle
 
 def setup(pencil):

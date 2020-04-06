@@ -1,4 +1,4 @@
-# Turtle test
+# Turtle testing
 
 import turtle
 

@@ -2,6 +2,11 @@
 
 # :::::::::::::::::: Classes :::::::::::::::::
 
+
+
+
+
+"""
 class Employee:
 
     def __init__(self, first, last, pay):
@@ -22,7 +27,7 @@ print(emp_4.fullname())
 print(emp_4.email)
 print(emp_4.pay)
 
-
+"""
 
 
 

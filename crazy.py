@@ -1,3 +1,5 @@
+# Crazy libs game
+
 def make_crazy_lib(filename):
     try:
         file = open(filename, 'r')

@@ -1,4 +1,4 @@
-# ISS (International Space Station) API
+# ISS (International Space Station) API.
 
 import requests
 

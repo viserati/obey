@@ -1,8 +1,19 @@
+# Class Study
+
 class Dog:
     def __init__(self, name, age, weight):
         self.name = name
         self.age = age
         self.weight = weight
+
+    def bark(self):
+        if self.weight > 29:
+            print(self.name, 'says "WOOF!, WOOF!"')
+        else:
+            print(self.name, 'says "arf!, arf!"')
+
+    def mname(self, arg):
+        pass
 
 def print_dog(dog):
     print(dog.name + "'s'", 'age is', dog.age, 'and weight is', dog.weight)

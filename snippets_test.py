@@ -3,10 +3,6 @@
 # :::::::::::::::::: Classes ::::::::::::::::::
 
 
-
-
-
-"""
 class Employee:
 
     def __init__(self, first, last, pay):
@@ -26,11 +22,6 @@ emp_4 = Employee('Daenerys', 'Targaryen', 560000)
 print(emp_4.fullname())
 print(emp_4.email)
 print(emp_4.pay)
-
-"""
-
-
-
 
 # :::::::::::::::::: Boolean :::::::::::::::::
 

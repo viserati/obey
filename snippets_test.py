@@ -77,7 +77,7 @@ def steal(balance, amount):
 proceeds = steal(balance, 1250)
 print ('Criminal: you stole', proceeds)
 '''
-# -------------------------------------
+# --------------------------------------
 
 # grades
 grade = 91
